@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+   <head>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/mainstyle.css') }}">
+   </head>
+   <body>
+      <h1>Главная страница</h1>
+      Здесь можно запросить фамилию и получить через Nebula GraphDB .json файл со всеми связами с этой фамилией.
+      <form action="http://localhost:5000/nebula_request" method="POST">
+         <p>
+            <br>ФИО сотрудника: <input type="text" name="Surname" /> </br>
+            <br><input type="submit" value="Запросить информацию" /> </br>
+         </p>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+   <head>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/mainstyle.css') }}">
+   </head>
+   <body>
+      <h1>Обращение к NebulaDB</h1>
+      <p>
+         Данные о сотруднике были успешно загружены в формате .json:<br>
+         {{ display }}
+      </p>
+      <p>
+         <b>Всего участвовал(-а) в {{ events|length }} событиях: {{ events }}</b>
+      </p>
+   </body>
+</html>
